@@ -1,0 +1,4 @@
+CREATE OR REPLACE FUNCTION pg_nice()
+RETURNS int
+AS '$libdir/pg_nice','pg_nice'
+LANGUAGE C VOLATILE STRICT;
